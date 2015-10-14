@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BE0A4C86-FC82-4F70-8ED6-D24C8B13E7BF}") = "TownMayorMod", "TownMayorMod\TownMayorMod.javaproj", "{E900044B-0AA1-4958-8A5D-38010084A1FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugClient|Any CPU = DebugClient|Any CPU
+		DebugServer|Any CPU = DebugServer|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E900044B-0AA1-4958-8A5D-38010084A1FF}.DebugClient|Any CPU.ActiveCfg = DebugClient|Any CPU
+		{E900044B-0AA1-4958-8A5D-38010084A1FF}.DebugClient|Any CPU.Build.0 = DebugClient|Any CPU
+		{E900044B-0AA1-4958-8A5D-38010084A1FF}.DebugServer|Any CPU.ActiveCfg = DebugServer|Any CPU
+		{E900044B-0AA1-4958-8A5D-38010084A1FF}.DebugServer|Any CPU.Build.0 = DebugServer|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

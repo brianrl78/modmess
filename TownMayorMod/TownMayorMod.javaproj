@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props" Condition="Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props')" />
+  <Import Project="..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.props" Condition="Exists('..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.props')" />
+  <PropertyGroup>
+    <MinecraftVersion>1.7.10</MinecraftVersion>
+    <MinecraftForgeVersion>1.7.10-10.13.2.1291</MinecraftForgeVersion>
+    <AssemblyName>TownMayorMod</AssemblyName>
+    <Name>TownMayorMod</Name>
+    <RootNamespace>TownMayorMod</RootNamespace>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugClient|AnyCPU' ">
+    <SourceRelease>Default</SourceRelease>
+    <TargetRelease>Default</TargetRelease>
+    <TargetVM>Hotspot</TargetVM>
+    <SourceEncoding />
+    <DebugSymbols>All</DebugSymbols>
+    <SpecificDebugSymbols />
+    <ShowWarnings>True</ShowWarnings>
+    <ShowAllWarnings>True</ShowAllWarnings>
+    <TreatWarningsAsErrors>None</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <OutputPath>bin\mods\</OutputPath>
+    <BuildArgs />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugServer|AnyCPU' ">
+    <SourceRelease>Default</SourceRelease>
+    <TargetRelease>Default</TargetRelease>
+    <TargetVM>Hotspot</TargetVM>
+    <SourceEncoding />
+    <DebugSymbols>All</DebugSymbols>
+    <SpecificDebugSymbols />
+    <ShowWarnings>True</ShowWarnings>
+    <ShowAllWarnings>True</ShowAllWarnings>
+    <TreatWarningsAsErrors>None</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <OutputPath>bin\mods\</OutputPath>
+    <BuildArgs />
+  </PropertyGroup>
+  <ItemGroup>
+    <SourceFolder Include="src\api\java" />
+    <SourceFolder Include="src\main\java\" />
+    <None Include="**\*.*" Exclude="bin\**\*.*;obj\**\*.*;out\**\*.*;*.user;*.javaproj;*.vspscc;*.vsscc;*.vssscc" />
+    <SourceFolder Include="src\main\resources\" />
+    <_CoreCreatePackageResourceInputs Include="src\main\resources\**\*.*">
+      <BaseOutputDirectory>src\main\resources\</BaseOutputDirectory>
+    </_CoreCreatePackageResourceInputs>
+    <_CoreCreatePackageResourceInputs Include="etc\core\*.*">
+      <BaseOutputDirectory>etc\core\</BaseOutputDirectory>
+    </_CoreCreatePackageResourceInputs>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\alchemistexplosive.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\alchemistexplosive_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestfront.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestfront_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargefrontleft.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargefrontleft_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargefrontright.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargefrontright_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargetopleft.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargetopleft_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargetopright.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestlargetopright_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chestside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chesttop.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\chesttop_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\cookedbrick.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\cookedbrick_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\dirtwall.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\dirtwall_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\maize0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\maize0_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\maize1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\maize1_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\mayangoldblock.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\mayangoldblock_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\mudbrick.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\mudbrickdried.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\mudbrickdried_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\mudbrick_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\paperwall.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\paperwall_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathbottom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathbottom_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathdirt.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathdirt_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathdirt_halfside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathdirt_halfside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathdirt_side.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathdirt_side_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravel.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravelslabs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravelslabs_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravel_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravel_halfside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravel_halfside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravel_side.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathgravel_side_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathochretiles.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathochretiles_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathochretiles_halfside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathochretiles_halfside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathochretiles_side.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathochretiles_side_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathsandstone.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathsandstone_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathsandstone_halfside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathsandstone_halfside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathsandstone_side.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathsandstone_side_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathslabs.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathslabs_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathslabs_halfside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathslabs_halfside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathslabs_side.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\pathslabs_side_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\rice0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\rice0_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\rice1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\rice1_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\silkwormempty.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\silkwormempty_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\silkwormfull.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\silkwormfull_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\stone.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\stone_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\thatch.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\thatch_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tilesfront.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tilesfront_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tileshalffront.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tileshalffront_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tileshalfside.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tileshalfside_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tilestophor.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tilestophor_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tilestopvert.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\tilestopvert_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\timberframecross.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\timberframecross_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\timberframeplain.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\timberframeplain_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\turmeric0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\turmeric0_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\turmeric1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\turmeric1_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\vine0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\vine0_64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\vine1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="src\main\resources\Assets\textures\blocks\vine1_64.png">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.props'))" />
+    <Error Condition="!Exists('..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.targets'))" />
+    <Error Condition="!Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Tvl.Java.1.2.0\build\Tvl.Java.props'))" />
+    <Error Condition="!Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets'))" />
+  </Target>
+  <Import Project="..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.targets" Condition="Exists('..\packages\com.microsoft.minecraftmod.0.5.4.0\build\com.microsoft.minecraftmod.targets')" />
+  <Import Project="..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets" Condition="Exists('..\packages\Tvl.Java.1.2.0\build\Tvl.Java.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

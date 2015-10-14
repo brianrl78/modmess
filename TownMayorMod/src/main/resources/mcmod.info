@@ -1,0 +1,16 @@
+[
+{
+  "modid": "millenaire",
+  "name": "Millénaire",
+  "description": "A village mod.",
+  "version": "6.0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Kinniken, BRL"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
